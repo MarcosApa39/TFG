@@ -1,8 +1,12 @@
 # TFG
-This repository contains the codes used in the ETL process and the development of the models of the TFG.
 
 # DESCRIPTION:
-
+This repository contains the codes used in the ETL process and the development of the models of the TFG. The files used in the ETL process are:
+- BaseNaked.py: here it is developed the ETL process of the database provided by Naked&Sated. The result of this process will be used in the main.py in order to merge both Naked&Sated final database and the Spanish regions database to create a new dataframe that will be used in the file AnalisisDelDato.py.
+- Comunidades_Autonomas.py: in this file takes place the ETL process of the Spanish regions databases that contain data related to healthy people domain, life satisfaction, healthy eating, physical activity and diseases of the Spanish population. The result is a new database that will be used in the file main.py in order to merge it with Naked&Sated final database, and in the AnalisisDelDato.py.
+- UK_job.py: in this file takes place the ETL process of the England regions databases that contain data related to healthy people domain, life satisfaction, healthy eating, physical activity, economic situation and diseases of the English population. The result is a new database that will be used in the AnalisisDelDato.py file, where the models are developed.
+- main.py: in this file both final Naked&Sated database and Spanish Regions database are merged to create a new database.
+- AnalisisDelDato.py: in this file takes place the development of the main part of the project: the model application. Principal Components Analysis (PCA), K-Means, KNN, and Gradient Boosting are the models implemented in this project, applied to the databases mentioned before.
 
 
 # PACKAGES:
